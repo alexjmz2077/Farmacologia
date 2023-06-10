@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         autoComplete.onItemClickListener = AdapterView.OnItemClickListener {
                 adapterView, view, i, l ->
             val itemSelect = adapterView.getItemAtPosition(i)
-            Toast.makeText(this,"Fármaco: $itemSelect", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Farmacos: $itemSelect", Toast.LENGTH_SHORT).show()
         }
     }
 }
