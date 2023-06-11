@@ -1,11 +1,84 @@
 <resources>
     <string name="app_name">Farmacologia</string>
     <string name="item_label">Farmacos</string>
-    <string name="farma1">Es una cefalosporina de primera generación que actúa por inhibición de la síntesis de la pared celular. Es bactericida con un mecanismo de acción dependiente del tiempo y se caracteriza por su actividad terapéutica de amplio espectro.
-Principalmente cefapirina sódica para el tratamiento de la mastitis por vía intramamaria o cefapirina benzatínica para el secado.
-Dosis
-Principalmente cefapirina sódica para el tratamiento de la mastitis por vía intramamaria o cefapirina benzatínica para el secado. La dosis/ cuarto es de 200/300 mg/12 h. Se aplica el tubo intramamario dando un masaje y sin ordeñar entre los tratamientos. Se utiliza en el tratamiento de endometritis junto con prostaglandina.
-Efecto secundario
-Los efectos secundarios más frecuentes son las alteraciones alérgicas (erupciones exantemáticas, prurito, fiebre, eosinofilia) y digestivas (diarrea, náuseas, vómitos).
+    <string name="farma1">
+        Se administran 88-110 mg/kg/12-24 h vía IV, o 30 mg/kg/8 h por     VO.
+        Está indicada en becerros menores de un mes de edad a razón de 33-50 mg/kg divididos en dos dosis al día durante uno a cinco días por VO o IV para el tratamiento de diarrea provocada o complicada por E. coli
+</string>
+    <string name="farma2">
+        Es una cefalosporina de primera generación que actúa por inhibición de la síntesis de la pared celular. Es bactericida con un mecanismo de acción dependiente del tiempo y se caracteriza por su actividad terapéutica de amplio espectro.
+        Principalmente cefapirina sódica para el tratamiento de la mastitis por vía intramamaria o cefapirina benzatínica para el secado.
+        Dosis
+        Principalmente cefapirina sódica para el tratamiento de la mastitis por vía intramamaria o cefapirina benzatínica para el secado. La dosis/ cuarto es de 200/300 mg/12 h. Se aplica el tubo intramamario dando un masaje y sin ordeñar entre los tratamientos. Se utiliza en el tratamiento de endometritis junto con prostaglandina.
+        Efecto secundario
+        Los efectos secundarios más frecuentes son las alteraciones alérgicas (erupciones exantemáticas, prurito, fiebre, eosinofilia) y digestivas (diarrea, náuseas, vómitos).
+</string>
+    <string name="farma3">
+        Indicaciones
+        Actúa contra bacterias gram positivas y algunas gram negativas, con efecto bactericida, en suspensión oleosa micronizada. Recomendado para: Tratamiento mastitis contagiosa y pododermatitis en ganado bovino.
+        Dosis
+        Está indicada para el tratamiento de infecciones respiratorias en dosis de 7-10 mg/ kg. En vacas se utiliza la vía IM o intramamaria (cefalexina monohidratada y benzatínica, 200 mg/ cuarto) para el tratamiento de mastitis por bacterias grampositivas y para el secado, respectivamente.
+
+        Efectos Adversos
+        Pueden producir hipersensibilidad (alergia) tras su inyección, inhalación, ingestión o contacto con la piel.
+</string>
+    <string name="farma4">
+        Indicaciones
+        Antibiótico indicado en el tratamiento de las infecciones bacterianas de los animales domésticos, como leptospirosis, neumonías y enteritis.
+        Dosis
+        Tratamiento de la leptospirosis bovina, y la dosis que se recomienda es de 6-2 g/ animal/ día/ no más de tres días por vía IM. Puede ser útil en infecciones por la subespecie Campylobacter fetus veneralis, utilizando una infusión (concentración de 500 mg/ ml) en dosis de 10 mi/tres días consecutivos en la cavidad prepucial, junto con una dosis de 22 mg/kg por vía SC.
+        Efectos Adversos:
+        No debe ser aplicado a animales con sensibilidad reconocida a Penicilina y Estreptomicina.
+        No usar en hembras preñadas ni en lactancia.
+</string>
+    <string name="farma5">
+        Indicaciones
+        Infecciones respiratorias causadas por Histophilus somni, Mannheimia haemolytica, Pasteurella multocida y Mycoplasma bovis. - Infecciones genitales: metritis causadas por Arcanobacterium pyogenes.
+        Dosis
+        Se ha utilizado en el tratamiento de dermatófitos y anaplasmosis con dosis de 20 mg/ kg; los animales quedan como portadores sanos.
+</string>
+    <string name="farma6">
+            Indicaciones
+            Es activo contra los patógenos bacterianos más comúnmente aislados implicados en la enfermedad respiratoria bovina que incluyen M. haemolytica, P.
+            Dosis
+            Se administran dos dosis de 20 mg/ kg por vía IM, con un intervalo de 48 h entre aplicaciones. Se administra en la tabla del cuello para evitar reacciones en los tejidos que pudieran dañar el aspecto de la canal; no se deben administrar más de 10 ml de solución en un mismo sitio.
+
+            Efectos Adversos
+            No administrar en animales que padezcan enfermedades cardiacas, hepáticas, renales, en donde pudiera haber posibilidad de sangrado gastrointestinal o donde haya evidencia de discrasia sanguínea.
+            No administrar en toros adultos destinados para la cruza.
+            No administrar en ganado que esté produciendo leche para consumo humano.
+</string>
+    <string name="farma7">
+            Indicaciones
+            Para el tratamiento y control de infestaciones por Haemonchus contortus, Ostertagia ostertagi, Trichostrongylus axei, Bunostomum phlebotomum, Nematodims helvetianus, Cooperia sp., Trichostrongylus colulniformis, Oesophagostomum radiatum y Dictyocaulus vivapams,
+            Dosis
+            La dosis única es de 5-7.5 mg/kg. Contra larvas de Ostertagia ostertagi, la dosis única se aumenta a 10 mg/kiJogramo.
+            Efectos Adversos
+            Diarrea o heces blandas. Pérdida de apetito. Letargo.
+</string>
+        <string name="farma8">
+            Indicaciones
+            Es un antiparasitario e inmunoestimulante inyectable para el control de parásitos gastrointestinales y pulmonares en bovinos, ovinos, porcinos y caprinos para la remoción de Dictyocaulus vivapurus adultos e inmaduros,
+            Dosis
+            administrar una dosis de 5.5 - 11 mg/ kg por VO en el alimento, en el agua de bebida o en bolos; pueden administrarse al mismo tiempo 3.3-8 mg/ kg por vía subcutánea.
+            Efectos Adversos
+            Hipersalivación, excitación, tremores musculares, vómito en pequeñas especies, edema pulmonar y aún convulsiones.
+</string>
+        <string name="farma9">
+            Indicaciones
+            Es un antiparasitario tenicida de acción total; para el control y tratamiento simultáneo de todas las teniasis de bovinos, ovinos, camélidos sudamericanos, equinos, caninos y felinos.
+            Dosis
+            Se utiliza contra Taenia saginata en dosis única de 50 mg/kg o 10 mg/ kg/ 10 días por vía oral.
+            Efectos Adversos
+            No administrar a animales con hipersensibilidad conocida a algún principio activo.
+</string>
+        <string name="farma10">
+            Indicaciones
+            Está indicado en el tratamiento y la prevención de la babesiosis en el ganado bovino, ganado ovino, caballos y perros, así como para el tratamiento de la anaplasmosis en el ganado bovino
+            Dosis
+            Para el tratamiento de la babesiosis la dosis es de 12 mg/kg por vía se, y como profiláctico 3 mg/ kg por vía subcutánea.
+            Efectos Adversos
+            Puede aparecer dolor e inflamación en la zona de inyección, incluso después de algunos días. Pueden aparecer síntomas tales como hipersalivación, rinorrea y vómitos poco después de la inyección.
+
 </string>
 </resources>

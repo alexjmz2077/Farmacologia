@@ -8,7 +8,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:focusableInTouchMode="true"
-    >
+    tools:ignore="ExtraText">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -21,17 +21,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/item_label"
-            android:inputType="none" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:inputType="none"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout><![CDATA[
+
+    >
+    ]]>
 
     <TextView
         android:id="@+id/farmaco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:textAppearance="?attr/textAppearanceSubtitle1"
-        />
+        android:textAppearance="?attr/textAppearanceSubtitle1" />
 
-
+    <Button
+        android:id="@+id/dosisButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>
