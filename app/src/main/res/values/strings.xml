@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Farmacologia</string>
     <string name="item_label">Farmacos</string>
+    <string name="farma1">Es una cefalosporina de primera generación que actúa por inhibición de la síntesis de la pared celular. Es bactericida con un mecanismo de acción dependiente del tiempo y se caracteriza por su actividad terapéutica de amplio espectro.
+Principalmente cefapirina sódica para el tratamiento de la mastitis por vía intramamaria o cefapirina benzatínica para el secado.
+Dosis
+Principalmente cefapirina sódica para el tratamiento de la mastitis por vía intramamaria o cefapirina benzatínica para el secado. La dosis/ cuarto es de 200/300 mg/12 h. Se aplica el tubo intramamario dando un masaje y sin ordeñar entre los tratamientos. Se utiliza en el tratamiento de endometritis junto con prostaglandina.
+Efecto secundario
+Los efectos secundarios más frecuentes son las alteraciones alérgicas (erupciones exantemáticas, prurito, fiebre, eosinofilia) y digestivas (diarrea, náuseas, vómitos).
+</string>
 </resources>
