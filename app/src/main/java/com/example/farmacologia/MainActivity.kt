@@ -16,8 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val items = listOf(
-            "Sulfacloropiridazina", "Cefapirina sódica", "Cefalexina", "Estreptomicina",
-            "Oxitetraciclina", "Florfenicol", "Fenbendazol", "Levamisol", "Praziquantel", "Imidocard"
+            "Amoxicilina", "Ampicilina", "Azitromicina", "Bacitracina", "Cefalexina", "Cefoperazona", "Cefradina", "Claritromicina", "Enrofloxacina", "Espiramicina", "Florfenicol", "Furaltadona", "Tiafenicol"
         )
 
         autoComplete = findViewById(R.id.auto_complete)
@@ -41,130 +40,70 @@ class MainActivity : AppCompatActivity() {
             val farmaco8: TextView = findViewById(R.id.farmaco)
             val farmaco9: TextView = findViewById(R.id.farmaco)
             val farmaco10: TextView = findViewById(R.id.farmaco)
+            val farmaco11: TextView = findViewById(R.id.farmaco)
+            val farmaco12: TextView = findViewById(R.id.farmaco)
+            val farmaco13: TextView = findViewById(R.id.farmaco)
 
             // Realizar comparación para mostrar el botón de dosis si se selecciona un fármaco específico
             when (selectedItem) {
-                "Sulfacloropiridazina" -> {
+                "Amoxicilina" -> {
                     farmaco1.text = getString(R.string.farma1)
                     dosisButton.visibility = Button.VISIBLE
                 }
-                "Cefapirina sódica" -> {
+                "Ampicilina" -> {
                     farmaco2.text = getString(R.string.farma2)
                     dosisButton.visibility = Button.VISIBLE
                 }
-                "Cefalexina" -> {
+                "Azitromicina" -> {
                     farmaco3.text = getString(R.string.farma3)
                     dosisButton.visibility = Button.VISIBLE
                 }
-                "Estreptomicina" -> {
+                "Bacitracina" -> {
                     farmaco4.text = getString(R.string.farma4)
                     dosisButton.visibility = Button.VISIBLE
                 }
-                "Oxitetraciclina" -> {
+                "Cefalexina" -> {
                     farmaco5.text = getString(R.string.farma5)
                     dosisButton.visibility = Button.VISIBLE
                 }
-                "Florfenicol" -> {
+                "Cefoperazona" -> {
                     farmaco6.text = getString(R.string.farma6)
                     dosisButton.visibility = Button.VISIBLE
                 }
-                "Fenbendazol" -> {
+                "Cefradina" -> {
                     farmaco7.text = getString(R.string.farma7)
                     dosisButton.visibility = Button.VISIBLE
                 }
-                "Levamisol" -> {
+                "Claritromicina" -> {
                     farmaco8.text = getString(R.string.farma8)
                     dosisButton.visibility = Button.VISIBLE
                 }
-                "Praziquantel" -> {
+                "Enrofloxacina" -> {
                     farmaco9.text = getString(R.string.farma9)
                     dosisButton.visibility = Button.VISIBLE
                 }
-                "Imidocard" -> {
+                "Espiramicina" -> {
                     farmaco10.text = getString(R.string.farma10)
+                    dosisButton.visibility = Button.VISIBLE
+                }
+                "Florfenicol" -> {
+                    farmaco11.text = getString(R.string.farma11)
+                    dosisButton.visibility = Button.VISIBLE
+                }
+                "Furaltadona" -> {
+                    farmaco12.text = getString(R.string.farma12)
+                    dosisButton.visibility = Button.VISIBLE
+                }
+                "Tiafenicol" -> {
+                    farmaco13.text = getString(R.string.farma13)
                     dosisButton.visibility = Button.VISIBLE
                 }
 
             }
 
-//            when (selectedItem) {
-//                "Sulfacloropiridazina" -> farmaco1.text = getString(R.string.farma1)
-//                "Cefapirina sódica" -> farmaco2.text = getString(R.string.farma2)
-//                "Cefalexina" -> farmaco3.text = getString(R.string.farma3)
-//                "Estreptomicina" -> farmaco4.text = getString(R.string.farma4)
-//                "Oxitetraciclina" -> farmaco5.text = getString(R.string.farma5)
-//                "Florfenicol" -> farmaco6.text = getString(R.string.farma6)
-//                "Fenbendazol" -> farmaco7.text = getString(R.string.farma7)
-//                "Levamisol" -> farmaco8.text = getString(R.string.farma8)
-//                "Praziquantel" -> farmaco9.text = getString(R.string.farma9)
-//                "Imidocard" -> farmaco10.text = getString(R.string.farma10)
-//
-//                "Sulfacloropiridazina", "Cefapirina sódica", "Cefalexina", "Estreptomicina", "Oxitetraciclina", "Florfenicol", "Fenbendazol", "Levamisol", "Praziquantel", "Imidocard" -> {
-//                    dosisButton.visibility = Button.VISIBLE }
 
-
-                // Agrega más casos aquí si deseas que el botón se muestre para otros fármacos
         }
     }
 }
 
-
-
-//package com.example.farmacologia
-//import android.widget.TextView
-//import androidx.appcompat.app.AppCompatActivity
-//import android.os.Bundle
-//import android.widget.ArrayAdapter
-//import android.widget.AutoCompleteTextView
-//
-//
-//class MainActivity : AppCompatActivity() {
-//
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//
-//        val items = listOf("Sulfacloropiridazina", "Cefapirina sódica", "Cefalexina", "Estreptomicina", "Oxitetraciclina", "Florfenicol", "Fenbendazol", "Levamisol", "Praziquantel", "Imidocard")
-//
-//        val autoComplete : AutoCompleteTextView = findViewById(R.id.auto_complete)
-//
-//        val adapter = ArrayAdapter(this,R.layout.list_item,items)
-//
-//        autoComplete.setAdapter(adapter)
-//
-//
-//
-//        val farmaco1: TextView = findViewById(R.id.farmaco)
-//        val farmaco2: TextView = findViewById(R.id.farmaco)
-//        val farmaco3: TextView = findViewById(R.id.farmaco)
-//        val farmaco4: TextView = findViewById(R.id.farmaco)
-//        val farmaco5: TextView = findViewById(R.id.farmaco)
-//        val farmaco6: TextView = findViewById(R.id.farmaco)
-//        val farmaco7: TextView = findViewById(R.id.farmaco)
-//        val farmaco8: TextView = findViewById(R.id.farmaco)
-//        val farmaco9: TextView = findViewById(R.id.farmaco)
-//        val farmaco10: TextView = findViewById(R.id.farmaco)
-//
-//        autoComplete.setOnItemClickListener { adapterView, view, i, l ->
-//            val itemSelect = adapterView.getItemAtPosition(i).toString()
-//
-//            // Aquí puedes realizar una comparación para determinar qué TextView actualizar según el fármaco seleccionado
-//            when (itemSelect) {
-//                "Sulfacloropiridazina" -> farmaco1.text = getString(R.string.farma1)
-//                "Cefapirina sódica" -> farmaco2.text = getString(R.string.farma2)
-//                "Cefalexina" -> farmaco3.text = getString(R.string.farma3)
-//                "Estreptomicina" -> farmaco4.text = getString(R.string.farma4)
-//                "Oxitetraciclina" -> farmaco5.text = getString(R.string.farma5)
-//                "Florfenicol" -> farmaco6.text = getString(R.string.farma6)
-//                "Fenbendazol" -> farmaco7.text = getString(R.string.farma7)
-//                "Levamisol" -> farmaco8.text = getString(R.string.farma8)
-//                "Praziquantel" -> farmaco9.text = getString(R.string.farma9)
-//                "Imidocard" -> farmaco10.text = getString(R.string.farma10)
-//            }
-//        }
-//
-//    }
-//
-//}
 
