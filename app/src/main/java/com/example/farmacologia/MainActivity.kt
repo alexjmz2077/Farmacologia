@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -75,11 +76,11 @@ class MainActivity : AppCompatActivity() {
             ) {
                 val selectedItem = parent?.getItemAtPosition(position).toString()
                 // Realiza acciones basadas en la selección del Spinner
-                Toast.makeText(
-                    applicationContext,
-                    "Seleccionaste: $selectedItem",
-                    Toast.LENGTH_SHORT
-                ).show()
+//                Toast.makeText(
+//                    applicationContext,
+//                    "Seleccionaste: $selectedItem",
+//                    Toast.LENGTH_SHORT
+//                ).show()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -115,8 +116,18 @@ class MainActivity : AppCompatActivity() {
 
         autoComplete.setOnItemClickListener { _, _, _, _ ->
             val selectedItem = autoComplete.text.toString()
-            // Ocultar el botón de dosis por defecto
-            dosisButton.visibility = Button.GONE
+
+            // Hacer visible el botón de dosis cuando de clic en un medicamento
+            dosisButton.visibility = Button.VISIBLE
+
+            //Hace visible los contenedores(LinerLayout)
+            val contenedor1: LinearLayout = findViewById(R.id.layout1)
+            val contenedor2: LinearLayout = findViewById(R.id.layout2)
+            val contenedor3: LinearLayout = findViewById(R.id.layout3)
+            contenedor1.visibility = View.VISIBLE
+            contenedor2.visibility = View.VISIBLE
+            contenedor3.visibility = View.VISIBLE
+
 
 
             val farmaco1: TextView = findViewById(R.id.farmaco)
@@ -138,68 +149,68 @@ class MainActivity : AppCompatActivity() {
 
                 "Amoxicilina" -> {
                     farmaco1.text = getString(R.string.farma1)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Ampicilina" -> {
                     farmaco2.text = getString(R.string.farma2)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Azitromicina" -> {
                     farmaco3.text = getString(R.string.farma3)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Bacitracina" -> {
                     farmaco4.text = getString(R.string.farma4)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Cefalexina" -> {
                     farmaco5.text = getString(R.string.farma5)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Cefoperazona" -> {
                     farmaco6.text = getString(R.string.farma6)
-                    dosisButton.visibility = Button.VISIBLE
-                    spinner2.visibility = Button.VISIBLE
+
+
                 }
 
                 "Cefradina" -> {
                     farmaco7.text = getString(R.string.farma7)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Claritromicina" -> {
                     farmaco8.text = getString(R.string.farma8)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Enrofloxacina" -> {
                     farmaco9.text = getString(R.string.farma9)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Espiramicina" -> {
                     farmaco10.text = getString(R.string.farma10)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Florfenicol" -> {
                     farmaco11.text = getString(R.string.farma11)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Furaltadona" -> {
                     farmaco12.text = getString(R.string.farma12)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
                 "Tiafenicol" -> {
                     farmaco13.text = getString(R.string.farma13)
-                    dosisButton.visibility = Button.VISIBLE
+
                 }
 
             }
