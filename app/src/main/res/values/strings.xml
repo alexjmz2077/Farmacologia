@@ -3,7 +3,7 @@
     <string name="item_label">Farmacos</string>
     <string name="farma1">
         Indicaciones \n
-        \n Infecciones respiratorias causadas por Pasteurella multocida y Mannheimia haemolytica
+        \n Infecciones respiratorias causadas por Pasteurella multocida y Mannheimia haemolytica\n
         \n Diarreas causadas por Clostridium perfringens \n
         \n Metritis causadas por Actinomyces pyogenes\n
         \n Efectos Adversos \n
@@ -96,4 +96,26 @@
             \n Efectos Adversos \n
             El tianfenicol altera el funcionamiento normal de la microbiota del rumen y el intestino cuando se administra por vía oral.
 </string>
+    <string-array name="options_array">
+        <item>Gramos</item>
+        <item>Kilogramos</item>
+        <item>Libras</item>
+
+    </string-array>
+
+
+    <string-array name="options_array2">
+        <item>μg/kg</item>
+        <item>mg/kg</item>
+        <item>μg/lb</item>
+        <item>mg/lb</item>
+    </string-array>
+    <string-array name="options_array3">
+        <item>μg/mL</item>
+        <item>mg/mL</item>
+        <item>μg/g</item>
+        <item>mg/g</item>
+        <item>μg/tableta</item>
+    </string-array>
+
 </resources>
