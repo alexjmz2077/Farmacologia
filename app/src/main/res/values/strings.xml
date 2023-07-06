@@ -3,31 +3,28 @@
     <string name="item_label">Farmacos</string>
     <string name="farma1">
         Indicaciones \n
-        \n Infecciones respiratorias causadas por Pasteurella multocida y Mannheimia haemolytica\n
-        \n Diarreas causadas por Clostridium perfringens \n
-        \n Metritis causadas por Actinomyces pyogenes\n
+        \n Infecciones respiratorias causadas por Pasteurella multocida y Mannheimia haemolytica
+        \n Diarreas causadas por Clostridium perfringens
+        \n Metritis causadas por Actinomyces pyogenes
         \n Efectos Adversos \n
-        La Amoxicilina es un derivado semisintético de la penicilina por lo cual pueden producirse reacciones anafilácticas. En este caso, administrar Epinefrina o similares.\n
+        La Amoxicilina es un derivado semisintético de la penicilina por lo cual pueden producirse reacciones anafilácticas. En este caso, administrar Epinefrina o similares.
 
 </string>
     <string name="farma2">
         Indicaciones \n
-        Está indicada en abscesos, actinomicosis, carbón sintomático, carbón bacteriano, neumonías, \n
-       neumonías, neumoenteritis en terneros, cistitis, nefritis, podredumbre de las pezuñas, \n
+        Está indicada en abscesos, actinomicosis, carbón sintomático, carbón bacteriano, neumonías, neumonías, neumoenteritis en terneros, cistitis, nefritis, podredumbre de las pezuñas, \n
         adenitis equina, leptospirosis, osteomelitis, artritis, onfaloflebitis, infecciones puerperales, septicemia hemorrágica, mastitis.\n
 
        Efectos Adversos \n
-       Ocurren reacciones de hipersensibilidad (especialmente en el ganado bovino), siendo sus manifestaciones comunes reacciones cutáneas, angioedema, fiebre farmacológica, enfermedad del suero, vasculitis, eosinofilia y anafilaxis. La sensibilidad cruzada entre las penicilinas es bien reconocida.\n
+       Ocurren reacciones de hipersensibilidad (especialmente en el ganado bovino), siendo sus manifestaciones comunes reacciones cutáneas, angioedema, fiebre farmacológica, enfermedad del suero, vasculitis, eosinofilia y anafilaxis. La sensibilidad cruzada entre las penicilinas es bien reconocida.
 
 </string>
     <string name="farma3">
 
         Indicaciones  \n
-         Para el tratamiento neumonía, neumoenteritis, tratamiento sistemático de la mastitis, metritis, podo dermatitis infecciosa por anaerobios, fiebre del transporte.\n
-        \n Efectos Adversos \n
+        Para el tratamiento neumonía, neumoenteritis, tratamiento sistemático de la mastitis, metritis, podo dermatitis infecciosa por anaerobios, fiebre del transporte.\n
+        Efectos Adversos \n
         Está indicada para el tratamiento de infecciones respiratorias en dosis de 7-10 mg/ kg. En vacas se utiliza la vía IM o intramamaria (cefalexina monohidratada y benzatínica, 200 mg/ cuarto) para el tratamiento de mastitis por bacterias grampositivas y para el secado, respectivamente.
-
-        \n Efectos Adversos \n
         Al igual que con eritromicina y otros macrólidos, raramente se han comunicado reacciones alérgicas graves, incluyendo angioedema y anafilaxia. Si ocurre una reacción alérgica, se debe suspender el tratamiento con azitromicina y debe instaurarse una terapia apropiada.
 </string>
     <string name="farma4">
@@ -38,15 +35,14 @@
 </string>
     <string name="farma5">
              Indicaciones \n
-            Para el tratamiento de las mastitis clínicas agudas y subagudas en vacas en lactancia     por:
-            Staphilococcus aureus, Micrococcus spp, Staphilococcus epidermidis, Arcanobacterium pyogenes, Staphilococcus agalactiae, Streptococcus dysgalactiae, Escherichia coli, Streptococcus uberis, Klebsiella spp, Streptococcus faecalis, Enterobacter.
+            Para el tratamiento de las mastitis clínicas agudas y subagudas en vacas en lactancia por: Staphilococcus aureus, Micrococcus spp, Staphilococcus epidermidis, Arcanobacterium pyogenes, Staphilococcus agalactiae, Streptococcus dysgalactiae, Escherichia coli, Streptococcus uberis, Klebsiella spp, Streptococcus faecalis, Enterobacter.
              \n Efectos Adversos  \n
             No administrar a animales con historial de hipersensibilidad a la cefoperazona. Animales con historial conocido de alergia a las penicilinas deben ser tratados con especial atención.
 </string>
     <string name="farma6">
             Indicaciones \n
             Staphilococcus aureus, Micrococcus spp, Staphilococcus epidermidis, Arcanobacterium pyogenes, Staphilococcus agalactiae, Streptococcus dysgalactiae, Escherichia coli, Streptococcus uberis, Klebsiella spp, Streptococcus faecalis, Enterobacter.
-        \n Efectos Adversos \n
+            \n Efectos Adversos \n
            No administrar a animales con historial de hipersensibilidad a la cefoperazona. Animales con historial conocido de alergia a las penicilinas deben ser tratados con especial atención.
 </string>
     <string name="farma7">
@@ -59,7 +55,7 @@
             Indicaciones \n
             Tratamiento y prevención (metafilaxis) de la enfermedad respiratoria bovina asociada con Mannheimia (Pasteurella) haemolytica, Pasteurella multocida, Haemophillus somnus y Mycoplasma bovis sensibles a tulatromicina. \n
             Tratamiento de la Queratoconjuntivitis Infecciosa Bovina, asociada con Moraxella bovis. \n
-            Tratamiento de la Necrobacilosis interdigital de los bovinos (Pietín) asociada con Bacteroides melaninogenicus, Bacteroides nodosus y Fusobacterium necrophorum. \n
+            Tratamiento de la Necrobacilosis interdigital de los bovinos (Pietín) asociada con Bacteroides melaninogenicus, Bacteroides nodosus y Fusobacterium necrophorum.
             \n Efectos Adversos \n
             Hipersalivación, excitación, tremores musculares, vómito en pequeñas especies, edema pulmonar y aún convulsiones.
 </string>
@@ -97,25 +93,18 @@
             El tianfenicol altera el funcionamiento normal de la microbiota del rumen y el intestino cuando se administra por vía oral.
 </string>
     <string-array name="options_array">
-        <item>Gramos</item>
-        <item>Kilogramos</item>
-        <item>Libras</item>
+
+        <item>Kg</item>
+        <item>Lb</item>
 
     </string-array>
 
 
     <string-array name="options_array2">
-        <item>μg/kg</item>
-        <item>mg/kg</item>
-        <item>μg/lb</item>
-        <item>mg/lb</item>
+        <item>ml</item>
+        <item>μl</item>
+
     </string-array>
-    <string-array name="options_array3">
-        <item>μg/mL</item>
-        <item>mg/mL</item>
-        <item>μg/g</item>
-        <item>mg/g</item>
-        <item>μg/tableta</item>
-    </string-array>
+
 
 </resources>

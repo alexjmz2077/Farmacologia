@@ -11,6 +11,7 @@ import android.widget.LinearLayout
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.get
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,33 +19,16 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dosisButton: Button
     private lateinit var spinner: Spinner
     private lateinit var spinner2: Spinner
-    private lateinit var spinner3: Spinner
     private lateinit var spinnerAdapter: ArrayAdapter<String>
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        fun calcularDosis(view: View) {
-            val pesoAnimalEditText = findViewById<EditText>(R.id.pesoanimal)
-            val dosisMedicaEditText = findViewById<EditText>(R.id.dosismedica)
-            val concentracionMedEditText = findViewById<EditText>(R.id.concentracionmed)
-            val resultadoTextView = findViewById<TextView>(R.id.textView4)
-
-            // Obtener los valores ingresados
-            val pesoAnimal = pesoAnimalEditText.text.toString().toDouble()
-            val dosisMedica = dosisMedicaEditText.text.toString().toDouble()
-            val concentracionMed = concentracionMedEditText.text.toString().toDouble()
-
-            // Realizar el cálculo
-            val resultado = (pesoAnimal * dosisMedica) / concentracionMed
-
-            // Mostrar el resultado
-            resultadoTextView.text = resultado.toString()
-        }
         spinner = findViewById(R.id.spinner)
         spinner2 = findViewById(R.id.spinner2)
-        spinner3 = findViewById(R.id.spinner3)
+
 
         val options = resources.getStringArray(R.array.options_array)
         spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, options)
@@ -57,36 +41,56 @@ class MainActivity : AppCompatActivity() {
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner2.adapter = spinnerAdapter
 
-        val options3 = resources.getStringArray(R.array.options_array3)
-        spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, options3)
-        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner3.adapter = spinnerAdapter
+
+
+        fun calcularDosis(view: View) {
+            val pesoAnimalEditText = findViewById<EditText>(R.id.pesoanimal)
+            val dosisMedicaEditText = findViewById<EditText>(R.id.dosismedica)
+            val concentracionMedEditText = findViewById<EditText>(R.id.concentracionmed)
+            val resultadoTextView = findViewById<TextView>(R.id.textView4)
+
+            // Obtener los valores ingresados
+            val pesoAnimal = pesoAnimalEditText.text.toString().toDouble()
+            val dosisMedica = dosisMedicaEditText.text.toString().toDouble()
+            val concentracionMed = concentracionMedEditText.text.toString().toDouble()
+
+            // Obtener los valores ingresados
+            val pesoAnimalText = pesoAnimalEditText.text.toString()
+            val dosisMedicaText = dosisMedicaEditText.text.toString()
+            val concentracionMedText = concentracionMedEditText.text.toString()
+
+
+            // Realizar el cálculo
+            val resultado = (pesoAnimal * dosisMedica) / concentracionMed
+
+            // Mostrar el resultado
+            resultadoTextView.text = resultado.toString()
+
+            // Obtener la opción seleccionada en el primer Spinner
+            val seleccionSpinner1 = spinner.selectedItem.toString()
+
+            // Obtener la opción seleccionada en el segundo Spinner
+            val seleccionSpinner2 = spinner2.selectedItem.toString()
+
+            // Construir el texto a mostrar en el resultado
+            val textoResultado = "RESULTADO: $resultado $seleccionSpinner2/$seleccionSpinner1"
 
 
 
 
+            // Verificar si algún campo está vacío
+            if (pesoAnimalText.isEmpty() || dosisMedicaText.isEmpty() || concentracionMedText.isEmpty()) {
+                Toast.makeText(this, "Por favor, ingrese todos los datos requeridos", Toast.LENGTH_SHORT).show()
+                return
+            }else{
 
-
-        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                val selectedItem = parent?.getItemAtPosition(position).toString()
-                // Realiza acciones basadas en la selección del Spinner
-//                Toast.makeText(
-//                    applicationContext,
-//                    "Seleccionaste: $selectedItem",
-//                    Toast.LENGTH_SHORT
-//                ).show()
+                // Mostrar el resultado
+                resultadoTextView.text = textoResultado            // Mostrar el resultado
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
         }
+
+
 
         val items = listOf(
             "Amoxicilina",
