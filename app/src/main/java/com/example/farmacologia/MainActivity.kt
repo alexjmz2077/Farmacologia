@@ -44,20 +44,30 @@ class MainActivity : AppCompatActivity() {
 
 
         fun calcularDosis(view: View) {
+
+
+
             val pesoAnimalEditText = findViewById<EditText>(R.id.pesoanimal)
             val dosisMedicaEditText = findViewById<EditText>(R.id.dosismedica)
             val concentracionMedEditText = findViewById<EditText>(R.id.concentracionmed)
             val resultadoTextView = findViewById<TextView>(R.id.textView4)
 
             // Obtener los valores ingresados
+            val pesoAnimalText = pesoAnimalEditText.text.toString()
+            val dosisMedicaText = dosisMedicaEditText.text.toString()
+            val concentracionMedText = concentracionMedEditText.text.toString()
+
+            // Verificar si algún campo está vacío
+            if (pesoAnimalText.isEmpty() || dosisMedicaText.isEmpty() || concentracionMedText.isEmpty()) {
+                Toast.makeText(this, "Por favor, ingrese todos los datos requeridos", Toast.LENGTH_SHORT).show()
+                return
+            }
+
+            // Obtener los valores ingresados
             val pesoAnimal = pesoAnimalEditText.text.toString().toDouble()
             val dosisMedica = dosisMedicaEditText.text.toString().toDouble()
             val concentracionMed = concentracionMedEditText.text.toString().toDouble()
 
-            // Obtener los valores ingresados
-            val pesoAnimalText = pesoAnimalEditText.text.toString()
-            val dosisMedicaText = dosisMedicaEditText.text.toString()
-            val concentracionMedText = concentracionMedEditText.text.toString()
 
 
             // Realizar el cálculo
@@ -75,18 +85,11 @@ class MainActivity : AppCompatActivity() {
             // Construir el texto a mostrar en el resultado
             val textoResultado = "RESULTADO: $resultado $seleccionSpinner2/$seleccionSpinner1"
 
+            // Mostrar el resultado
+            resultadoTextView.text = textoResultado
 
 
 
-            // Verificar si algún campo está vacío
-            if (pesoAnimalText.isEmpty() || dosisMedicaText.isEmpty() || concentracionMedText.isEmpty()) {
-                Toast.makeText(this, "Por favor, ingrese todos los datos requeridos", Toast.LENGTH_SHORT).show()
-                return
-            }else{
-
-                // Mostrar el resultado
-                resultadoTextView.text = textoResultado            // Mostrar el resultado
-            }
 
         }
 
