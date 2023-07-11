@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
 
             // Realizar el cálculo
-            val resultado = (pesoAnimal * dosisMedica) / concentracionMed
+            val resultado = String.format("%.2f", ((pesoAnimal * dosisMedica) / concentracionMed))
 
             // Mostrar el resultado
             resultadoTextView.text = resultado.toString()
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
             val seleccionSpinner2 = spinner2.selectedItem.toString()
 
             // Construir el texto a mostrar en el resultado
-            val textoResultado = "RESULTADO: $resultado $seleccionSpinner2/$seleccionSpinner1"
+            val textoResultado = "Dosis: $resultado $seleccionSpinner2/$seleccionSpinner1"
 
             // Mostrar el resultado
             resultadoTextView.text = textoResultado
